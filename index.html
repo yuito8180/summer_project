@@ -73,23 +73,24 @@
             <h2 id="sing">Sing in</h2>
 
             <form class="singForm" action="register.php" method="POST">
-                <p class="newName"><input type="text" value="" name="name" placeholder="お名前"></p>
+                <p class="newName"><input type="text" value="" class="nName" name="name" placeholder="お名前"></p>
                 <p class="newScYearBox">
-                    <select class="scYear" name="scYear" value="">
-                        <option value="">WD1A</option>
-                        <option value="">WD2A</option>
-                        <option value="">WD3A</option>
+                    <select class="scYear" name="scYear">
+                        <option name="scYear" value="WD1A">WD1A</option>
+                        <option name="scYear" value="WD2A">WD2A</option>
+                        <option name="scYear" value="WD3A">WD3A</option>
                     </select>
                 </p>
-                <p class="newEmail"><input type="email" value="" name="email" placeholder="メールアドレス"></p>
-                <p class="newPassword"><input type="password" value="" name="password" placeholder="パスワード"></p>
-                <p class="newConPassword"><input type="password" value="" name="con_password" placeholder="確認パスワード"></p>
-                <p class="newButton"><input type="submit" value="登録" id="Registration"></p>
+                <p class="newEmail"><input type="email" value="" class="nMail" name="email" placeholder="メールアドレス"></p>
+                <p class="newPassword"><input type="password" value="" class="nPassword" name="password" placeholder="パスワード"></p>
+                <p class="newConPassword"><input type="password" value="" class="nConPassword" name="con_password" placeholder="確認パスワード"></p>
+                <p class="newButton"><input type="submit" value="登録" class="register" id="Registration"></p>
             </form>
         </div>
         <div class="footer">
             <p>footer</p>
         </div>
     </div>
+    <script src="js/confirm.js"></script>
 </body>
 </html>
