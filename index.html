@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <link href="https://fonts.googleapis.com/css?family=Livvic|Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="log_in">
+                <form action="index.php" method="POST">
+                <input type="email" name="email" class="mail" placeholder="メールアドレス/お名前" size="25">
+                <input type="password" name="password" class="pass" placeholder="パスワード" size="25">
+                <input type="submit" value="ログイン" id="log_in">
+                </form>
+            </div>
+        
+
+            <div class="in_box">
+                <div class="logo">
+                    <h1>p<span class="color">u</span>zzle
+                    <img id="logo" src="images/logo.png" alt="puzzle">
+                    <span class="text">ー人と人とが繋がるサイトー</span>
+                    </h1>
+                </div>
+        </div>
+        
+
+                <div id="about_box">
+                    <h2 id="about">About</h2>
+                        <div class="about_box">
+                        <p><img src="images/question.png" alt="?"></p>
+                        <p class="about_text">わからない事があって先輩に聞きたい！<br>
+                            でも、人見知りだし先輩がどんな人かわ<br>
+                            からない！</p>
+                        </div>
+
+
+                    <p class="arrows"><img src="images/Arrows.png" alt="下矢印"></p>
+
+
+                    <h3>use this site</h3>
+                    <div class="about_box">
+                        <p><img src="images/answer.png" alt="!"></p>
+                        <p class="about_text">わからない事があって先輩に聞きたい！<br>
+                        でも、人見知りだし先輩がどんな人かわ<br>
+                        からない！</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="how_box">
+                <h2>How to use..?</h2>
+                <div class="how_box">
+                    <div class="how_img">
+                        <p>
+                        <img id="puzzle1" src="images/puzzle1.png" alt="質問">
+                        <img id="puzzle2" src="images/puzzle2.png" alt="約束">
+                        <img id="puzzle3" src="images/puzzle3.png" alt="会う">
+                        </p>
+                    </div>
+
+                    <p class="how_text">簡単3stepで自分がわからない事を解決！</p>
+                </div>
+            </div>
+
+
+        <div id="sing_box">
+            <h2 id="sing">Sing in</h2>
+
+            <form action="register.php" method="POST">
+                <input type="text" value="" name="name" placeholder="お名前" size="30">
+                <select class="scYear" name="scYear" value="">
+                    <option value="">WD1A</option>
+                </select>
+                <input type="email" value="" name="email" placeholder="メールアドレス" size="30">
+                <input type="password" value="" name="password" placeholder="パスワード" size="30">
+                <input type="password" value="" name="con_password" placeholder="確認パスワード" size="30">
+                <input type="submit" value="登録" id="Registration">
+            </form>
+        </div>
+        <div id="footer">
+            <p>footer</p>
+        </div>
+    </div>
+</body>
+</html>
