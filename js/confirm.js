@@ -1,11 +1,11 @@
 $(()=>{
  
- var name = $(".nName");
- var scYear = $(".scYear");
- var mail = $(".nMail");
- var password = $(".nPassword");
- var conPassword = $(".nConPassword");
- var register = $(".register");
+    var name = $(".nName");
+    var scYear = $(".scYear");
+    var mail = $(".nMail");
+    var password = $(".nPassword");
+    var conPassword = $(".nConPassword");
+    var register = $(".register");
 
  register.on("click",(event)=>{
     // 入力チェック

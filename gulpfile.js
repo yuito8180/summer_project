@@ -10,7 +10,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const autoprefixer = require('gulp-autoprefixer');
-const pug = require('gulp-pug');
+// guconst pug = require('gulp-pug');
 // const webpack = require('webpack');
 // const webpackStream = require('webpack-stream');
 // const webpackConfig = require('./webpack.config');
@@ -57,18 +57,18 @@ task('js',(done)=>{
     done();
 });
 
-task('pug',(done)=>{
-    //src(['pugSrcPath' + '/*.pug' , '!' + pugSrcPath + '/_*.pug'])
-    src([`${pugSrcPath}/*.pug` , `!${pugSrcPath}/_*.pug`])
-    .pipe(plumber({
-        errorHandler: notify.onError('Error: <%= error.message %>')
-    }))
-    .pipe(pug({
-        pretty: true
-    }))
-    .pipe(dest(pugDestPath));
-    done();
-});
+// task('pug',(done)=>{
+//     //src(['pugSrcPath' + '/*.pug' , '!' + pugSrcPath + '/_*.pug'])
+//     src([`${pugSrcPath}/*.pug` , `!${pugSrcPath}/_*.pug`])
+//     .pipe(plumber({
+//         errorHandler: notify.onError('Error: <%= error.message %>')
+//     }))
+//     .pipe(pug({
+//         pretty: true
+//     }))
+//     .pipe(dest(pugDestPath));
+//     done();
+// });
 
 task('watch',(done)=>{
 //es5 or es6 
@@ -77,9 +77,10 @@ task('watch',(done)=>{
 //    watch(jsSrcPath+'/*.js',task('js'));
     watch(`${jsSrcPath}/*.js`,task('js'));
 //    watch(pugSrcPath+'/*.pug',task('pug'));
-    watch(`${pugSrcPath}/*.pug`,task('pug'));
+//  watch(`${pugSrcPath}/*.pug`,task('pug'));
    done();
 });
 
-task('default',series('sass','js','pug'));
+// task('default',series('sass','js','pug'));
+task('default',series('sass','js'));
 

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    height: 90px;
+    background: #5C82C9;
+}
+
+.headerM{
+    width: 812px;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__icon{
+        display: flex;
+        p{
+            color: #fff;
+            font-size: 21px;
+            span{
+                color: #EFCD11;
+            }
+        }
+    }
+    &__nav{
+        form{
+            display: flex;
+        }
+        button{
+            padding: 0;
+            border: none;
+            background: transparent;
+        }
+    }
+}

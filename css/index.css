@@ -4,7 +4,7 @@
 }
 
 body{
-	font-family: "ヒラギノ角ゴ ProN" "" sans-serif;
+	font-family: "ヒラギノ角ゴ ProN" sans-serif;
 	font-size: 16px;
 	color: 000;
 }
@@ -25,12 +25,13 @@ body{
 .log_in{
 	width: 100%;
 	height: 60px;
-	padding-top: 40px;
+	padding-top: 20px;
 	text-align: right;
 }
 
 input{
 	font-size: 20px;
+	border: #707070 bold 1px;
 }
 
 .pass,#log_in{
@@ -41,10 +42,9 @@ input{
 #log_in{
 	background-color: #EFCD11;
 	width: 120px;
-	height: 30px;
+	height: 37px;
 	margin-right: 65px;
-	-moz-outline-radius:15px;
-	-webkit-border-radius:15px;
+	border-radius:18px;
 }
 
 .in_box{
@@ -61,22 +61,28 @@ input{
 	width: 610px;
 	height: 280px;
 	margin: 0 auto;
-	padding-top: 260px;
+	padding-top: 200px;
 	color: #FFFFFF;
 }
 
 h1{
 	display: inline;
 	font-size: 70px;
+	font-family: 'Noto Sans JP', sans-serif;
 }	
 
 .color{
 	color: #EFCD11;
 }
 
+input{
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
 .text{
 	line-height: 80px;
 	display: block;
+	font-weight: bold;
 	font-size: 18px;
 }
 
@@ -180,7 +186,7 @@ h3{
 
 #sing_box{
 	width: 460px;
-	height: 500px;
+	height: 600px;
 	margin: 0 auto;
 }
 
@@ -202,7 +208,7 @@ h3{
 }
 
 .newName input,.newEmail input,.newPassword input,.newConPassword input{
-	width: 460px;
+	width: 455px;
 	height: 31px;
 	border: solid 0.5px #707070;
 	padding-left: 3px;
@@ -215,9 +221,9 @@ h3{
 #Registration{
 	background-color: #EFCD11;
 	width: 80px;
-	height: 30px;
-	border-radius:15px;
-	margin-top: 20px;
+	height: 37px;
+	border-radius:18px;
+	margin-top: 20px 0 150px;
 }
 
 .newButton{
@@ -228,16 +234,16 @@ h3{
 
 .footer{
 	width: 100%;
-	height: 600px;
+	height: 200px;
 	background-image: url(../images/background3.png);
-	background-size: 100% 500px;
+	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: bottom;
+	background-position: top;
 }
 
 .footer p{
 	text-align: center;
-	padding-top: 250px;
+	padding-top: 100px;
 }
 
 

@@ -9,8 +9,8 @@
         $_password = htmlspecialchars($newUserData["password"]);
         $_password = htmlspecialchars($newUserData["con_password"]);
 
-        $db->query("INSERT INTO acountData(name, class, address, password) VALUES ('{$_name}','{$_scYear}','[$_address]','{$_password}');");
-        header('Location: test.php');
+        $db->query("INSERT INTO acountData(name, class, address, password) VALUES ('{$_name}','{$_scYear}','{$_address}','{$_password}');");
+        header("Location: index.html");
     }
 
 ?>
