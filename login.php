@@ -5,7 +5,7 @@
     if(ISSET($_POST)){
         $loginData = $_POST;
         $logAddress = htmlspecialchars($loginData["email"]);
-        $logAPassword = htmlspecialchars($loginData["password"]);
+        $logPassword = htmlspecialchars($loginData["password"]);
 
         $result = $db->query("SELECT * FROM acountData WHERE address='{$logAddress}'");
 
@@ -32,7 +32,7 @@
                     $_SESSION["name"] = $row["name"];
                     $_SESSION["class"] = $row["class"];
                 }
-                if($_password == $logAPassword){
+                if($_password == $logPassword){
 
                     print "ログインしました。";
                     header("Location: home.php");

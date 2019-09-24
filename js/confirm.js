@@ -6,6 +6,7 @@ $(()=>{
     var password = $(".nPassword");
     var conPassword = $(".nConPassword");
     var register = $(".register");
+    var check_address = new RegExp(/^(\w+\.\w+)|\w+\@\w+\.\w+/);
 
  register.on("click",(event)=>{
     // 入力チェック
@@ -27,15 +28,31 @@ $(()=>{
 
     if(mail.val() == ""){
         alert("メールアドレスが未入力です。");
-        return false ;
+    }else{
+        if(check_address.test(mail.val())==false){
+            event.preventDefault();
+            alert("メールアドレスの入力形式が違います。")
+            return false ;
+        }
     }
 
-    if(password.val() !== conPassword.val()){// パスワードの確認
+    var passwordCount = password.val();
+    passwordCount = passwordCount.length;
+
+    if( passwordCount < 6 ){
         event.preventDefault();
-        alert("確認パスワードが一致しません。");
+        alert("パスワードは6文字以上入力してください。");
+        return false ;
     }else{
-        alert("登録できました。");
+        if(password.val() !== conPassword.val()){// パスワードの確認
+            event.preventDefault();
+            alert("確認パスワードが一致しません。");
+        }else{
+            alert("登録できました。");
+        }
     }
+
+
   });
 
 
